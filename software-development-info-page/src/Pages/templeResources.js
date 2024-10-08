@@ -1,5 +1,5 @@
-const templeResources = () => {
+const TempleResources = () => {
   return <div>resources</div>;
 };
 
-export default templeResources;
+export default TempleResources;

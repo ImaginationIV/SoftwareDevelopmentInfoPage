@@ -1,22 +1,22 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Pages/layout";
-import templeResources from "./Pages/templeResources";
+import TempleResources from "./Pages/templeResources";
+import Home from "./Pages/home";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/templeResources" element={<templeResources />}></Route>
+          <Route index element={<Home />} />
+          <Route path="TempleResources" element={<TempleResources />}></Route>
           <Route></Route>
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);

@@ -9,10 +9,12 @@ const Layout = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/TempleResources">TempleResources</Link>
           </li>
         </ul>
       </nav>
+
+      <Outlet />
     </>
   );
 };
